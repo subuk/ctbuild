@@ -1,0 +1,7 @@
+/bin/
+/pkg/
+/vendor/pkg/
+/vendor/bin/
+*.sublime-project
+*.sublime-workspace
+/.vagrant

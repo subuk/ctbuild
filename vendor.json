@@ -1,0 +1,24 @@
+{
+    "package": [
+        {
+            "path": "github.com/hashicorp/hcl", 
+            "revision": "392dba7d905ed5d04a5794ba89f558b27e2ba1ca"
+        }, 
+        {
+            "path": "github.com/alecthomas/units", 
+            "revision": "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a"
+        }, 
+        {
+            "path": "gopkg.in/alecthomas/kingpin.v2", 
+            "revision": "7f0871f2e17818990e4eed73f9b5c2f429501228"
+        }, 
+        {
+            "path": "github.com/docker/docker", 
+            "revision": "82c2a08b6018586f3c8f35405c3bd6fce3c78ccd"
+        }, 
+        {
+            "path": "github.com/alecthomas/template", 
+            "revision": "a0175ee3bccc567396460bf5acd36800cb10c49c"
+        }
+    ]
+}
