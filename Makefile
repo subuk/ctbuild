@@ -7,7 +7,7 @@ PREFIX = /usr
 BIN_DIR = $(DESTDIR)$(PREFIX)/bin
 CONF_DIR = $(DESTDIR)/etc/ctbuild
 INSTALL = install
-VERSION = $(shell git describe --tags)
+VERSION = $(shell git describe --tags --always)
 BUILD_DATE = $(shell date -u +%Y-%m-%dT%H:%M:%S+0000)
 
 default: bin/ctbuild
