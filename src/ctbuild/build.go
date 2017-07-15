@@ -147,6 +147,13 @@ func (cmd *mainCmd) Run(*kingpin.ParseContext) error {
 	if _, err := io.Copy(os.Stdout, ctLogs); err != nil && err != io.EOF {
 		return Error{err, "failed to read container logs"}
 	}
+	ctInfo, err := cmd.docker.ContainerInspect(ctx, containerId)
+	if err != nil {
+		return Error{err, "failed to inspect container"}
+	}
+	if ctInfo.State.ExitCode != 0 {
+		return Error{err, fmt.Sprintf("container exited with code %d", ctInfo.State.ExitCode)}
+	}
 	return nil
 
 }
